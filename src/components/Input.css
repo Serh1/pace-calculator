@@ -1,0 +1,69 @@
+:root {
+  --text: white;
+  --primary: #253237;
+  --primary-hover: #5c6b73;
+  --secondary: #9db4c0;
+  --text-size: 20px;
+}
+
+.input-wrapper {
+  display: inline;
+  padding: 15px;
+  font-size: var(--text-size);
+  width: 450px;
+  background-color: var(--secondary);
+  border-radius: 16px;
+  margin: 20px;
+
+  color: var(--text);
+}
+
+.distance,
+.time,
+.result,
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  margin: 20px 10px 25px 12px;
+  height: 3em;
+  border-radius: 16px;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.hours,
+.minutes,
+.seconds {
+  margin: 1em;
+}
+
+.distance input {
+  width: 60px;
+}
+
+.result .text {
+  color: gold;
+}
+
+input {
+  width: 50px;
+  font-size: large;
+  background-color: var(--primary);
+  text-align: center;
+  border: none;
+  box-sizing: border-box;
+  color: var(--text);
+  font-size: var(--text-size);
+}
+
+input::placeholder {
+  color: var(--text);
+}
+
+.row {
+  display: flex;
+}
