@@ -1,14 +1,23 @@
 header {
     min-height: 100vh;
     background: url('../../assets/img/background.png');
-    background-size: cover; 
+    /* background-size: cover;  */
     background-position: center;
+    background-size: auto;
 }
 
 header .wrapper{
     position: relative;
     height: 100vh;
     color: white;
+}
+
+.earth_img{
+    image-orientation: 45deg;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 600px;
 }
 
 header .title-secondary{

@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Header.css"
 import Navbar from '../Navbar/Navbar'
+import EarthBanner from '../../assets/img/earth.png'
 
 const Header = () => {
     return (
@@ -22,6 +23,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+            <img className='earth_img' src={EarthBanner}></img>
         </header>
     )
 }

@@ -1,35 +1,83 @@
 :root {
   --text: white;
-  --primary: #253237;
+  --primary: #222122;
   --primary-hover: #5c6b73;
-  --secondary: #9db4c0;
+  --secondary: #3A3A3A;
   --text-size: 20px;
 }
 
 .input-wrapper {
-  display: inline;
-  padding: 15px;
+  padding: 40px;
+  font-family: 'Roboto',sans-serif;
   font-size: var(--text-size);
-  width: 450px;
+  width: 800px;
   background-color: var(--secondary);
   border-radius: 16px;
-  margin: 20px;
-
+  display: flex;
   color: var(--text);
 }
 
 .distance,
 .time,
-.result,
 .title {
   display: flex;
+  align-items: center;
+  background-color: var(--primary);
+  height: 72px;
+  width: 440;
+  border-radius: 8px;
+  margin-bottom:16px ;
+  margin-right: 53px;
+}
+
+.distance{
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.time{
+  justify-content: space-evenly;
+}
+.row{
+  margin-right: 53px;
+  gap: 21px;
+  display: flex;
+}
+
+.col{
+  width: 700px;
+}
+
+.reset{
+  color: #5c6b73;
+  width: 171px;
+  height: 72px;
+}
+
+.result{
+  display: flex;
+  width: 340px;
+  height: 250px;
   justify-content: center;
   align-items: center;
   background-color: var(--primary);
-  margin: 20px 10px 25px 12px;
-  height: 3em;
-  border-radius: 16px;
+  border-radius: 8px;
 }
+
+.result .value{
+  font-size: 120px;
+  font-family: 'Viga',sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result .measurement{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .title {
   font-size: 50px;
@@ -43,10 +91,6 @@
 
 .distance input {
   width: 60px;
-}
-
-.result .text {
-  color: gold;
 }
 
 input {
@@ -64,6 +108,5 @@ input::placeholder {
   color: var(--text);
 }
 
-.row {
-  display: flex;
-}
+
+

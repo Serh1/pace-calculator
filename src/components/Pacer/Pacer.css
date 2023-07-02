@@ -1,0 +1,17 @@
+pacer{
+    display:block;
+    height: 1080;
+    overflow: auto;
+    background-color: #2F1B1A;
+}
+
+pacer .wrapper{
+    height: 100vh;
+}
+
+pacer .content-wrapper{
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
