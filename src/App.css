@@ -3,11 +3,19 @@
 }
 
 body {
-  background-color: black;
+  /* background-color: black */
 }
 
 .App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  text-align: center;
+  background-image: url('assets/img/background.png');
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
 }
+
+
+
