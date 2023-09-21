@@ -1,34 +1,76 @@
 :root {
   --text: white;
-  --primary: #253237;
+  --primary: #222122;
   --primary-hover: #5c6b73;
-  --secondary: #9db4c0;
+  --secondary: #3a3a3a;
   --text-size: 20px;
 }
 
 .input-wrapper {
-  display: inline;
-  padding: 15px;
+  padding: 40px;
+  font-family: "Roboto", sans-serif;
   font-size: var(--text-size);
-  width: 450px;
   background-color: var(--secondary);
   border-radius: 16px;
-  margin: 20px;
-
+  display: flex;
+  gap: 16px;
   color: var(--text);
 }
 
 .distance,
 .time,
-.result,
 .title {
   display: flex;
+  align-items: center;
+  background-color: var(--primary);
+  height: 72px;
+  width: 440;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  /* margin-right: 53px; */
+}
+
+.distance {
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.time {
+  justify-content: space-evenly;
+}
+.button_wrapper {
+  gap: 21px;
+  display: flex;
+}
+
+.reset {
+  color: #5c6b73;
+  width: 171px;
+  height: 72px;
+}
+
+.result {
+  display: flex;
+  width: 340px;
+  height: 250px;
   justify-content: center;
   align-items: center;
   background-color: var(--primary);
-  margin: 20px 10px 25px 12px;
-  height: 3em;
-  border-radius: 16px;
+  border-radius: 8px;
+}
+
+.result .value {
+  font-size: 120px;
+  font-family: "Viga", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result .measurement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
@@ -42,15 +84,14 @@
 }
 
 .distance input {
-  width: 60px;
-}
-
-.result .text {
-  color: gold;
+  width: 80%;
+  left: 0;
+  text-align: left;
+  padding-left: 2rem;
 }
 
 input {
-  width: 50px;
+  width: 100%;
   font-size: large;
   background-color: var(--primary);
   text-align: center;
@@ -63,7 +104,37 @@ input {
 input::placeholder {
   color: var(--text);
 }
-
-.row {
+.data-wrapper {
+  width: 100%;
   display: flex;
+  flex-direction: column;
+}
+.result {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 600px) {
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  ..button_wrapper,
+  .time,
+  .distance {
+    width: 100%;
+  }
+
+  .distance input {
+    width: 60%;
+  }
+
+  .result {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .result .value {
+    font-size: 70px;
+  }
 }

@@ -8,7 +8,7 @@ const Input = () => {
   const [hours, setHours] = useState("");
   const [minutes, setMinutes] = useState("");
   const [seconds, setSeconds] = useState("");
-  const [result, setResult] = useState("__");
+  const [result, setResult] = useState("5.30");
 
   const refresh = (section, event) => {
     const newValue = event.target.value;
@@ -35,7 +35,7 @@ const Input = () => {
     setHours("");
     setMinutes("");
     setSeconds("");
-    setResult("__");
+    setResult("0.00");
   };
 
   const calculatePace = () => {
@@ -59,54 +59,53 @@ const Input = () => {
 
   return (
     <div className="input-wrapper">
-      <div className="title">Pace Calculator</div>
-      <div className="distance ">
-        <div>Distance:</div>
-        <input
-          value={distance}
-          onChange={(e) => refresh("distance", e)}
-          placeholder="00"
-          className="value"
-        />
-        <div>KM</div>
-      </div>
+      <div className="data-wrapper">
+        <div className="distance ">
+          <input
+            value={distance}
+            onChange={(e) => refresh("distance", e)}
+            placeholder="00"
+            className="distance_value"
+          />
+          <div>KM</div>
+        </div>
 
-      <div className="time">
-        <div>Time:</div>
-        <input
-          onChange={(e) => refresh("hours", e)}
-          value={hours}
-          placeholder="00"
-          className="hours"
-        />
-        :
-        <input
-          onChange={(e) => refresh("minutes", e)}
-          value={minutes}
-          placeholder="00"
-          className="minutes"
-        />
-        :
-        <input
-          onChange={(e) => refresh("seconds", e)}
-          value={seconds}
-          placeholder="00"
-          className="seconds"
-        />
-      </div>
+        <div className="time">
+          <input
+            onChange={(e) => refresh("hours", e)}
+            value={hours}
+            placeholder="00"
+            className="hours"
+          />
+          :
+          <input
+            onChange={(e) => refresh("minutes", e)}
+            value={minutes}
+            placeholder="00"
+            className="minutes"
+          />
+          :
+          <input
+            onChange={(e) => refresh("seconds", e)}
+            value={seconds}
+            placeholder="00"
+            className="seconds"
+          />
+          {/* <div>H/M/S</div> */}
+        </div>
 
+        <div className="button_wrapper">
+          <Button name="Reset" className="reset" handleClick={resetPace} s />
+          <Button
+            name="Calculate"
+            className="calculate"
+            handleClick={calculatePace}
+          />
+        </div>
+      </div>
       <div className="result">
-        <div>Result: </div>
-        <div className="text"> {result} </div>
-        <div>min/km</div>
-      </div>
-      <div className="row">
-        <Button
-          name="Calculate"
-          className="calculate"
-          handleClick={calculatePace}
-        />
-        <Button name="Reset" handleClick={resetPace} />
+        <div className="value"> {result} </div>
+        <div className="measurement">min/km</div>
       </div>
     </div>
   );

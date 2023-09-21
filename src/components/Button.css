@@ -1,15 +1,15 @@
 .button-wrapper {
-  height: 3em;
+  height: 72px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 18px;
   border-radius: 16px;
   background-color: var(--primary);
   color: var(--text);
   flex: 1;
-  margin: 10px;
   cursor: pointer;
+  font-family: 'Viga',sans-serif;
 }
 
 .button-wrapper:hover {
