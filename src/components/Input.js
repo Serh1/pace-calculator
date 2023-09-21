@@ -59,7 +59,7 @@ const Input = () => {
 
   return (
     <div className="input-wrapper">
-      <div className="col">
+      <div className="data-wrapper">
         <div className="distance ">
           <input
             value={distance}
@@ -71,7 +71,6 @@ const Input = () => {
         </div>
 
         <div className="time">
-
           <input
             onChange={(e) => refresh("hours", e)}
             value={hours}
@@ -92,10 +91,10 @@ const Input = () => {
             placeholder="00"
             className="seconds"
           />
-            {/* <div>H/M/S</div> */}
+          {/* <div>H/M/S</div> */}
         </div>
 
-        <div className="row">
+        <div className="button_wrapper">
           <Button name="Reset" className="reset" handleClick={resetPace} s />
           <Button
             name="Calculate"
@@ -105,10 +104,8 @@ const Input = () => {
         </div>
       </div>
       <div className="result">
-        <div className="col">
-          <div className="value"> {result} </div>
-          <div className="measurement">min/km</div>
-        </div>
+        <div className="value"> {result} </div>
+        <div className="measurement">min/km</div>
       </div>
     </div>
   );
