@@ -1,4 +1,4 @@
-# 🏃 Pace Calculator 
+# 🏃 Pace Calculator Responsive
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -6,9 +6,9 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-![preview img](src/Pace_Calculator_Preview.png)
+![preview img](src/assets/img/Preview_devices.png)
+![preview img](src/assets/img/preview.png)
+
 
 
