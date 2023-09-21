@@ -1,30 +1,23 @@
-import React from 'react'
-import "./Navbar.css"
+import React from "react";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <nav>
-      <a href='#' className='logo'>
+      <a href="#" className="logo">
         MATEIU SERGIU
       </a>
 
       <ul>
         <li>
-          <a href='#'>HOME</a>
+          <a href="#">HOME</a>
         </li>
         <li>
-          <a href='#'>PACER</a>
-        </li>
-        <li>
-          <a href='#'>CONTACT</a>
-        </li>
-        <li>
-          <a href='#'>SUN</a>
+          <a href="#">PACER</a>
         </li>
       </ul>
-
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
