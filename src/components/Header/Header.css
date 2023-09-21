@@ -1,51 +1,70 @@
 header {
-    min-height: 100vh;
-    background: url('../../assets/img/background.png');
-    /* background-size: cover;  */
-    background-position: center;
-    background-size: auto;
+  min-height: 100vh;
+  background: url("../../assets/img/background.png");
+  /* background-size: cover;  */
+  background-position: center;
+  background-size: auto;
 }
 
-header .wrapper{
-    position: relative;
-    height: 100vh;
-    color: white;
+header .wrapper {
+  color: white;
 }
 
-.earth_img{
-    image-orientation: 45deg;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 600px;
+.earth_img {
+  image-orientation: 45deg;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 600px;
 }
 
-header .title-secondary{
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
+header .title-secondary {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
 }
 
-header .title-main{
-    font-family: 'Viga', sans-serif;
-    font-size: 120px;
+header .title-main {
+  font-family: "Viga", sans-serif;
+  font-size: 120px;
 }
 
-header .description{
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-size: 20px;
-    max-width: 50%;
-    padding: 0;
+header .description {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  max-width: 50%;
+  padding: 0;
 }
 
-header .list-wrapper{
-    font-family: 'Roboto', sans-serif;
-    font-size: 23px;
+header .list-wrapper {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
 }
 
-header .cta{
-    position: absolute;
-    left: 0;
-    bottom: 20%;
+header .cta {
+  position: absolute;
+  left: 0;
+  bottom: 20%;
+  line-height: 1;
 }
 
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  header .title-main {
+    font-size: 80px;
+  }
+  .earth_img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .earth_img {
+    width: 300px;
+  }
+}
